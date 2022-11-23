@@ -1,0 +1,1 @@
+Copyright {{{year}}} DBHDS {{{copyright_holder}}}. All rights reserved.

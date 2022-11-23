@@ -1,0 +1,55 @@
+template:
+  package: zkgr
+
+navbar:
+  structure:
+    right: [devops]
+  components:
+    articles:
+      text: Articles
+      menu:
+      - text: How To
+        href: articles/introduction.html
+      - text: Documenting Packages
+        href: articles/documentation-functions.html
+      - text: Additional Resources
+        href: articles/additional-resources.html
+    devops:
+      text: View source code on Azure DevOps
+      icon: fa-code
+      href: https://dev.azure.com/dbhds-virginia/EHA%20Packages/_git/zkgr
+      aria-label: View source code on Azure DevOps
+
+home:
+  links:
+  - text: View source code on Azure DevOps
+    href: https://dev.azure.com/dbhds-virginia/EHA%20Packages/_git/zkgr
+
+repo:
+  url:
+    source: https://dev.azure.com/dbhds-virginia/EHA%20Packages/_git/zkgr?path=/
+
+reference:
+- title: "Access package documentation"
+  desc: "Open package documentation rendered with `pkgdown`"
+  contents:
+  - docs
+  - serve_docs
+- title: "Use all DBHDS standards and styles"
+  desc: "Use all DBHDS styles encapsulted in `zkgr`"
+  contents:
+  - use_pkgr
+- title: "Selectively adopt styles and standards"
+  desc: "Functions to adopt some subset of DBHDS styles and standards"
+  contents:
+  - use_pkgr_yaml
+  - use_dbhds_logo
+  - use_dbhds_license
+  - use_dbhds_readme
+  - use_dbhds_docs
+  - use_template
+
+deploy:
+  install_metadata: true
+
+destination: inst/pkgdown_docs

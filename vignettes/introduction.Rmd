@@ -1,0 +1,49 @@
+---
+title: "How to use zkgr"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{How to use zkgr}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Working with `devtools` and `usethis`   
+  
+- `devtools` and `usethis` are R packages that expedite the development of R 
+packages through user interaction  
+- These packages can require some configuration. The `usethis` package includes 
+a very helpful vignette entitled 
+[usethis setup](https://usethis.r-lib.org/articles/usethis-setup.html)  
+- Some useful functions/options:  
+  - `usethis` provides *a lot* of output to the R console. This can be incredibly 
+  useful as you work through developing a new package from scratch. Over time, 
+  however, this can be annoying -- especially in the context of automated 
+  testing with `testthat`. These messages can be silenced by setting 
+  `options(usethis.quiet = TRUE)`. Within automated   tests, this can be set 
+  using `withr::local_options(list(usethis.quiet = TRUE))`.  
+  
+
+## Steps  
+  
+### If using in an existing R package...  
+
+1. Open the package root directory  
+2. If an `.Rproj` file already exists, open the project in RStudio. If no such 
+file exists, create one using the File > New Project... option  
+3. Load packages  
+```{r setup, eval=FALSE}
+library(devtools)    # also loads `usethis` and sets .Rproj as active project
+library(zkgr)
+```
+4. Adopt all `zkgr` default options at once
+```{r use_pkgr, eval=FALSE}
+use_pkgr()
+```
+

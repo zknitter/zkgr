@@ -1,0 +1,11 @@
+^renv$
+^renv\.lock$
+^dbhds\.pkgr\.Rproj$
+^\.Rproj\.user$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^README\.Rmd$
+^doc$
+^Meta$
+^LICENSE\.md$

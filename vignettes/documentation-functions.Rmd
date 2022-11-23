@@ -1,0 +1,30 @@
+---
+title: "Documentation functions for DBHDS pacakges"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Documentation functions for DBHDS pacakges}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# Package Documentation  
+
+One of the principle advantages of using an R package over a set of R scripts 
+to perform an analysis is that packages can have more robust documentation. 
+All R packages, in order to pass basic build checks like `devtools::check()`, 
+must have their contents documented in `.Rd` files in the `man` directory.  
+  
+The directory tree below illustrates the contents of the `man` directory within 
+this package. As you can see, each function exported from this package has a 
+corresponding `.Rd` file.  
+    
+```{r print_man_dir, echo=FALSE}
+fs::dir_tree("../man")
+```

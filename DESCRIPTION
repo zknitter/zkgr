@@ -1,0 +1,41 @@
+Package: zkgr
+Title: A package to style DBHDS pkgdown document sites
+Version: 0.0.0.9000
+Authors@R: 
+    person(
+      given = "Zachary", 
+      family = "Knitter",
+      email = "zachary.knitter@dbhds.virginia.gov",
+      role = c("aut", "cre")
+    )
+Description: This package contains a template to standardize DBHDS pkgdown sites. 
+  Rather than requiring package developers to perform the same sorts of formatting 
+  changes to each pkgdown site. 
+License: file LICENSE
+URL:
+    https://dev.azure.com/dbhds-virginia/EHA%20Packages/_git/zkgr
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0),
+    lifecycle
+Config/testthat/edition: 3
+Imports: 
+    cli,
+    desc,
+    devtools,
+    fs,
+    pkgdown (>= 1.9.0),
+    rlang,
+    rprojroot,
+    servr,
+    stringr,
+    usethis,
+    whisker,
+    yaml
+VignetteBuilder: knitr
+Author: Zachary Knitter [aut, cre]
+Maintainer: Zachary Knitter <zachary.knitter@dbhds.virginia.gov>

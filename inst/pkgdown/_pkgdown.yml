@@ -1,0 +1,9 @@
+template:
+  bootstrap: 5
+  bootswatch: flatly
+  bslib:
+    base_font: {google: "Josefin Sans"}
+    heading_font: {google: "EB Garamond"}
+    code_font: {google: "Space Mono"}
+deploy:
+  install_metadata: true
